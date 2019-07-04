@@ -47,6 +47,7 @@ void process_image_callback(const sensor_msgs::Image img)
  	}
     }
     
+    //Robot velocity control part
     if(white == 0)
     {
 	drive_robot(0.0, 0.0); 

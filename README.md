@@ -26,4 +26,29 @@ ball_chaser ROS package holds our C++ nodes.
  - process_imageC++
     - This node reads our robot’s camera image, analyzes it to determine the presence and position of a white ball. If a white ball exists in the image, the node should request a service via a client to drive the robot towards it.
  
+### Basic Build Instructions
+1. Create a catkin Workspace
+```
+    mkdir -p catkin_ws/src
+    cd catkin_ws/src
+    catkin_init_workspace
+    cd ..
+    catkin_make
+```
+2. Clone the repository
+```
+    cd catkin/src
+    git clone https://github.com/Gopsee/Go-Chase-It.git
+    cd ..
+    catkin_make
+```
+3. Source the workspace
+```
+    source devel/setup.bash
+``` 
+4. Launch the main file
+```
+    roslaunch my_robot world.launch 
+    roslaunch ball_chaser ball_chaser.launch
+```
   
